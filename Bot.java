@@ -177,11 +177,6 @@ public class Bot extends TelegramLongPollingBot {
                             System.out.println("chto ne tack?");
                             teacherRegister.Registration(message.getChatId(),teacherRegister.longBooleanHashMap.get(message.getChatId()).getName());
                             sendMsg(message,"Ошибка! Возможно вы неправильно ввели группу, попробуйте еще раз. Пример: ПИ-20");
-                            //sendMsg(message, "Что то пошло не так");
-                            /*SendPhoto sendPhoto = new SendPhoto();
-                            sendPhoto.setChatId(message.getChatId());
-                            sendPhoto.setNewPhoto(new File("C:/Bot/photo/Что то пошло не так.jpg"));
-                            sendPhoto(sendPhoto);*/
                             register.RemoveUser(message.getChatId());
 
                         } catch (Exception e) {
@@ -486,7 +481,7 @@ public class Bot extends TelegramLongPollingBot {
     }
 
     public String getBotToken() {
-        return "1645890038:AAGOaxLD_n93bQA4qt3b74dzGlHt-0L1aQ4";
+        return "1645890038:AAAAAAAAAAAAAAAAAAAAAAAA";
     }
 
 }
